@@ -1,5 +1,7 @@
 require 'pry'
 
+# Finished model
+
 class Show < ActiveRecord::Base
     def self.highest_rating
         Show.all.maximum(:rating)
